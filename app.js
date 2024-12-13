@@ -23,6 +23,9 @@ const app = Vue.createApp({
     handleMousemove(e){
       this.x = e.offsetX
       this.y = e.offsetY
+    },
+    toggleChangeColor(book){
+      book.isFav = !book.isFav
     }
   }
 })
